@@ -1,3 +1,15 @@
+Metadata-Version: 2.1
+Name: configureout
+Version: 0.1
+Summary: A simple configuration module
+Home-page: https://github.com/your_username/configureout
+Author: EightShift
+Author-email: the8shift@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
 # ConfigureOut
 
 ConfigureOut is a lightweight Python module designed to simplify the process of loading and accessing configuration data from JSON files. It provides a simple and intuitive interface for managing configuration settings within your Python applications.
