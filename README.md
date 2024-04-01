@@ -1,4 +1,4 @@
-# ConfigureOut
+# configureout
 
 ConfigureOut is a lightweight Python module designed to simplify the process of loading and accessing configuration data from JSON files. It provides a simple and intuitive interface for managing configuration settings within your Python applications.
 
