@@ -1,17 +1,17 @@
 # configureout
 
-ConfigureOut is a lightweight Python module designed to simplify the process of loading and accessing configuration data from JSON files. It provides a simple and intuitive interface for managing configuration settings within your Python applications.
+configureout is a lightweight Python module designed to simplify the process of loading and accessing configuration data from JSON files. It provides a simple and intuitive interface for managing configuration settings within your Python applications.
 
 ## Features
 
-- **Easy Configuration Loading:** ConfigureOut allows you to load configuration settings from JSON files with just a few lines of code.
+- **Easy Configuration Loading:** configureout allows you to load configuration settings from JSON files with just a few lines of code.
 - **Nested Configuration Support:** Easily access nested configuration settings using dot notation.
 - **Flexible and Extensible:** The module can be easily extended to suit your specific needs, allowing for customization and flexibility.
-- **Pythonic Interface:** ConfigureOut provides a Pythonic interface for accessing configuration settings, making it easy to integrate into your projects.
+- **Pythonic Interface:** configureout provides a Pythonic interface for accessing configuration settings, making it easy to integrate into your projects.
 
 ## Installation
 
-You can install ConfigureOut via pip:
+You can install configureout via pip:
 
 ```
 pip install configureout
@@ -46,7 +46,7 @@ Consider the following JSON configuration file ('config.json'):
   }
 }
 ```
-With ConfigureOut, you can easily load and access these settings in your Python code:
+With configureout, you can easily load and access these settings in your Python code:
 ```
 from configureout import Config
 
