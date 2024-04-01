@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='configureout',
-    version='0.1',
+    version='1.0',
     description='A simple configuration module',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
