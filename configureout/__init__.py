@@ -10,14 +10,13 @@ class BaseConfig():
 
 
 class Config(BaseConfig):
-    def __init__(self, config_file):
+    def __init__(self, config_file, encoding='utf-8'):
         self.__file = config_file
-        
-        self._load_config()
 
-    def _load_config(self):
-        with open(self.__file, "r", encoding="utf-8") as config:
-            config = json.loads(config.read())
+        self._load_config(encoding)
+
+    def _load_config(self, encoding):
+        with open(self.__file, "r", encoding=encoding) as config_file:
+            config = json.loads(config_file.read())
 
             super().__init__(config)
-
