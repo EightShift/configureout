@@ -48,3 +48,6 @@ class Config(object):
 	
 	def items(self):
 		return ((k, getattr(self, k)) for k in self.__keys)
+	
+	def to_dict(self):
+		return {k: getattr(self, k) for k in self.__keys}
