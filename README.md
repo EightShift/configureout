@@ -39,40 +39,56 @@ print(cfg.db.host)  # localhost
 
 ## Public Methods
 ```python
-cfg.to_dict() # Converts the internal namespace config to a standard Python dictionary.
+# Converts the internal namespace config to a standard Python dictionary.
+cfg.to_dict()
 
-cfg.save(config_path=None, **kwargs) # Saves the current configuration to a JSON file. (Attribute "config_path" is required for non-file configs.)
+# Saves the current configuration to a JSON file. (Attribute "config_path" is required for non-file configs.)
+cfg.save(config_path=None, **kwargs)
 
-cfg.update(other=None, **kwargs) # Updates the configuration with new values (from dict or keyword args).
+# Updates the configuration with new values (from dict or keyword args).
+cfg.update(other=None, **kwargs)
 
-cfg.copy() # Returns a copy of the current configuration.
+# Returns a copy of the current configuration.
+cfg.copy()
 
-cfg.keys() / cfg.values() / cfg.items() / cfg.get(key, default=None) # Standard dictionary-style access methods.
+# Standard dictionary-style access methods.
+cfg.keys() / cfg.values() / cfg.items() / cfg.get(key, default=None)
 ```
 
 ## Magic Methods
 ```python
-__getitem__(key) / __setitem__(key, value) # Enables dict-style access: cfg['key'].
+# Enables dict-style access: cfg['key'].
+__getitem__(key) / __setitem__(key, value)
 
-__delattr__(key) # Deletes a config attribute.
+# Deletes a config attribute.
+__delattr__(key)
 
-__contains__(key) # Checks if key exists using 'key' in cfg.
+# Checks if key exists using 'key' in cfg.
+__contains__(key)
 
-__len__() # Returns the number of keys.
+# Returns the number of keys.
+__len__()
 
-__iter__() # Enables iteration over keys.
+# Enables iteration over keys.
+__iter__()
 
-__str__() # Returns a formatted JSON string of the config.
+# Returns a formatted JSON string of the config.
+__str__()
 
-__repr__() # Developer-friendly representation of the config.
+# Developer-friendly representation of the config.
+__repr__()
 
-__bool__() # Returns False if the config is empty.
+# Returns False if the config is empty.
+__bool__()
 
-__eq__(other) # Compares config with another Config or dict.
+# Compares config with another Config or dict.
+__eq__(other)
 
-__or__(other) / __ior__(other) # Merge configs using | and |= operators.
+# Merge configs using | and |= operators.
+__or__(other) / __ior__(other)
 
-__reduce__() # Supports pickling.
+# Supports pickling.
+__reduce__()
 ```
 
 ## Python Version
