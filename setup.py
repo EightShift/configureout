@@ -2,8 +2,8 @@ from setuptools import setup, find_packages
 
 setup(
     name='configureout',
-    version='2.0',
-    description='A simple configuration module',
+    version='2.1',
+    description='A lightweight and flexible configuration loader for Python.',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
     author='EightShift',
