@@ -12,6 +12,7 @@ You can install configureout via pip:
 ```bash
 pip install configureout
 ```
+Or just `configureout.py` in your project.
 
 ## Usage
 ```python
