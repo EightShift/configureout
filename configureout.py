@@ -57,8 +57,22 @@ def _to_dict(obj):
 
 
 def _jsonc_to_json(jsonc_str):
-    jsonc_str = re.sub(r"\/\/.*", "", jsonc_str)
-    return re.sub(r"\/\*.*?\*\/", "", jsonc_str, flags=re.DOTALL)
+    jsonc_str = re.sub(r"/\*[\s\S]*?\*/", "", jsonc_str)
+
+    def remove_line_comments(line):
+        in_string = False
+        result = ""
+        i = 0
+        while i < len(line):
+            if line[i] == '"' and (i == 0 or line[i - 1] != "\\"):
+                in_string = not in_string
+            if not in_string and line[i : i + 2] == "//":
+                break
+            result += line[i]
+            i += 1
+        return result
+
+    return "\n".join(remove_line_comments(line) for line in jsonc_str.splitlines())
 
 
 class Config(SimpleNamespace):

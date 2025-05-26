@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "configureout"
-version = "2.2"
+version = "2.3"
 description = "A lightweight and flexible configuration loader for Python."
 readme = "README.md"
 authors = [{ name = "EightShift", email = "the8shift@gmail.com" }]
