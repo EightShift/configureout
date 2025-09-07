@@ -22,4 +22,5 @@ keywords = ["configuration", "loader"]
 Homepage = "https://github.com/EightShift/configureout"
 
 [tool.setuptools]
-py-modules = ["configureout"] # Аналог py_modules в setup()
+py-modules = ["configureout"]
+
